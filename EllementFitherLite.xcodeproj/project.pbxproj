@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FCFAA0E314F8BF8200F8458C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFAA0E214F8BF8200F8458C /* UIKit.framework */; };
+		FCFAA0E514F8BF8200F8458C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFAA0E414F8BF8200F8458C /* Foundation.framework */; };
+		FCFAA0E714F8BF8200F8458C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFAA0E614F8BF8200F8458C /* CoreGraphics.framework */; };
+		FCFAA0ED14F8BF8200F8458C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCFAA0EB14F8BF8200F8458C /* InfoPlist.strings */; };
+		FCFAA0EF14F8BF8200F8458C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFAA0EE14F8BF8200F8458C /* main.m */; };
+		FCFAA0F314F8BF8200F8458C /* VeniceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFAA0F214F8BF8200F8458C /* VeniceAppDelegate.m */; };
+		FCFAA0F614F8BF8200F8458C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCFAA0F414F8BF8200F8458C /* MainStoryboard.storyboard */; };
+		FCFAA0F914F8BF8200F8458C /* VeniceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFAA0F814F8BF8200F8458C /* VeniceViewController.m */; };
+		FCFAA10114F8BF8200F8458C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFAA10014F8BF8200F8458C /* SenTestingKit.framework */; };
+		FCFAA10214F8BF8200F8458C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFAA0E214F8BF8200F8458C /* UIKit.framework */; };
+		FCFAA10314F8BF8200F8458C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFAA0E414F8BF8200F8458C /* Foundation.framework */; };
+		FCFAA10B14F8BF8200F8458C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCFAA10914F8BF8200F8458C /* InfoPlist.strings */; };
+		FCFAA10E14F8BF8300F8458C /* EllementFitherLiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFAA10D14F8BF8300F8458C /* EllementFitherLiteTests.m */; };
+		FCFAA11914F8BFC300F8458C /* VeniceEllement.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFAA11814F8BFC300F8458C /* VeniceEllement.m */; };
+		FCFAA11A14F8BFC300F8458C /* VeniceEllement.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFAA11814F8BFC300F8458C /* VeniceEllement.m */; };
+		FCFAA11D14F8BFE400F8458C /* VeniceFightBattle.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFAA11C14F8BFE400F8458C /* VeniceFightBattle.m */; };
+		FCFAA11E14F8BFE400F8458C /* VeniceFightBattle.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFAA11C14F8BFE400F8458C /* VeniceFightBattle.m */; };
+		FCFAA12614F8C76F00F8458C /* VeniceBasicAttackSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFAA12514F8C76F00F8458C /* VeniceBasicAttackSkill.m */; };
+		FCFAA12714F8C76F00F8458C /* VeniceBasicAttackSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFAA12514F8C76F00F8458C /* VeniceBasicAttackSkill.m */; };
+		FCFAA12A14F8C7A700F8458C /* VeniceBasicDefenceSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFAA12914F8C7A700F8458C /* VeniceBasicDefenceSkill.m */; };
+		FCFAA12B14F8C7A700F8458C /* VeniceBasicDefenceSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFAA12914F8C7A700F8458C /* VeniceBasicDefenceSkill.m */; };
+		FCFAA12E14F8C7E100F8458C /* VeniceDashSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFAA12D14F8C7E100F8458C /* VeniceDashSkill.m */; };
+		FCFAA12F14F8C7E100F8458C /* VeniceDashSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFAA12D14F8C7E100F8458C /* VeniceDashSkill.m */; };
+		FCFAA13214F8C7F700F8458C /* VeniceBlockSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFAA13114F8C7F600F8458C /* VeniceBlockSkill.m */; };
+		FCFAA13314F8C7F700F8458C /* VeniceBlockSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFAA13114F8C7F600F8458C /* VeniceBlockSkill.m */; };
+		FCFAA13614F8D07100F8458C /* VeniceSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFAA13514F8D07100F8458C /* VeniceSkill.m */; };
+		FCFAA13714F8D07100F8458C /* VeniceSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFAA13514F8D07100F8458C /* VeniceSkill.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCFAA10414F8BF8200F8458C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCFAA0D514F8BF8200F8458C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCFAA0DD14F8BF8200F8458C;
+			remoteInfo = EllementFitherLite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FCFAA0DE14F8BF8200F8458C /* EllementFitherLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EllementFitherLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCFAA0E214F8BF8200F8458C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FCFAA0E414F8BF8200F8458C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FCFAA0E614F8BF8200F8458C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FCFAA0EA14F8BF8200F8458C /* EllementFitherLite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EllementFitherLite-Info.plist"; sourceTree = "<group>"; };
+		FCFAA0EC14F8BF8200F8458C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FCFAA0EE14F8BF8200F8458C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FCFAA0F014F8BF8200F8458C /* EllementFitherLite-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EllementFitherLite-Prefix.pch"; sourceTree = "<group>"; };
+		FCFAA0F114F8BF8200F8458C /* VeniceAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VeniceAppDelegate.h; sourceTree = "<group>"; };
+		FCFAA0F214F8BF8200F8458C /* VeniceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VeniceAppDelegate.m; sourceTree = "<group>"; };
+		FCFAA0F514F8BF8200F8458C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		FCFAA0F714F8BF8200F8458C /* VeniceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VeniceViewController.h; sourceTree = "<group>"; };
+		FCFAA0F814F8BF8200F8458C /* VeniceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VeniceViewController.m; sourceTree = "<group>"; };
+		FCFAA0FF14F8BF8200F8458C /* EllementFitherLiteTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EllementFitherLiteTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCFAA10014F8BF8200F8458C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		FCFAA10814F8BF8200F8458C /* EllementFitherLiteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EllementFitherLiteTests-Info.plist"; sourceTree = "<group>"; };
+		FCFAA10A14F8BF8200F8458C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FCFAA10C14F8BF8200F8458C /* EllementFitherLiteTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EllementFitherLiteTests.h; sourceTree = "<group>"; };
+		FCFAA10D14F8BF8300F8458C /* EllementFitherLiteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EllementFitherLiteTests.m; sourceTree = "<group>"; };
+		FCFAA11714F8BFC300F8458C /* VeniceEllement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VeniceEllement.h; sourceTree = "<group>"; };
+		FCFAA11814F8BFC300F8458C /* VeniceEllement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VeniceEllement.m; sourceTree = "<group>"; };
+		FCFAA11B14F8BFE400F8458C /* VeniceFightBattle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VeniceFightBattle.h; sourceTree = "<group>"; };
+		FCFAA11C14F8BFE400F8458C /* VeniceFightBattle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VeniceFightBattle.m; sourceTree = "<group>"; };
+		FCFAA12414F8C76F00F8458C /* VeniceBasicAttackSkill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VeniceBasicAttackSkill.h; sourceTree = "<group>"; };
+		FCFAA12514F8C76F00F8458C /* VeniceBasicAttackSkill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VeniceBasicAttackSkill.m; sourceTree = "<group>"; };
+		FCFAA12814F8C7A700F8458C /* VeniceBasicDefenceSkill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VeniceBasicDefenceSkill.h; sourceTree = "<group>"; };
+		FCFAA12914F8C7A700F8458C /* VeniceBasicDefenceSkill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VeniceBasicDefenceSkill.m; sourceTree = "<group>"; };
+		FCFAA12C14F8C7E100F8458C /* VeniceDashSkill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VeniceDashSkill.h; sourceTree = "<group>"; };
+		FCFAA12D14F8C7E100F8458C /* VeniceDashSkill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VeniceDashSkill.m; sourceTree = "<group>"; };
+		FCFAA13014F8C7F600F8458C /* VeniceBlockSkill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VeniceBlockSkill.h; sourceTree = "<group>"; };
+		FCFAA13114F8C7F600F8458C /* VeniceBlockSkill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VeniceBlockSkill.m; sourceTree = "<group>"; };
+		FCFAA13414F8D07100F8458C /* VeniceSkill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VeniceSkill.h; sourceTree = "<group>"; };
+		FCFAA13514F8D07100F8458C /* VeniceSkill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VeniceSkill.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCFAA0DB14F8BF8200F8458C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCFAA0E314F8BF8200F8458C /* UIKit.framework in Frameworks */,
+				FCFAA0E514F8BF8200F8458C /* Foundation.framework in Frameworks */,
+				FCFAA0E714F8BF8200F8458C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCFAA0FB14F8BF8200F8458C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCFAA10114F8BF8200F8458C /* SenTestingKit.framework in Frameworks */,
+				FCFAA10214F8BF8200F8458C /* UIKit.framework in Frameworks */,
+				FCFAA10314F8BF8200F8458C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCFAA0D314F8BF8200F8458C = {
+			isa = PBXGroup;
+			children = (
+				FCFAA0E814F8BF8200F8458C /* EllementFitherLite */,
+				FCFAA10614F8BF8200F8458C /* EllementFitherLiteTests */,
+				FCFAA0E114F8BF8200F8458C /* Frameworks */,
+				FCFAA0DF14F8BF8200F8458C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCFAA0DF14F8BF8200F8458C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCFAA0DE14F8BF8200F8458C /* EllementFitherLite.app */,
+				FCFAA0FF14F8BF8200F8458C /* EllementFitherLiteTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCFAA0E114F8BF8200F8458C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCFAA0E214F8BF8200F8458C /* UIKit.framework */,
+				FCFAA0E414F8BF8200F8458C /* Foundation.framework */,
+				FCFAA0E614F8BF8200F8458C /* CoreGraphics.framework */,
+				FCFAA10014F8BF8200F8458C /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCFAA0E814F8BF8200F8458C /* EllementFitherLite */ = {
+			isa = PBXGroup;
+			children = (
+				FCFAA12314F8C73600F8458C /* Skills */,
+				FCFAA0F114F8BF8200F8458C /* VeniceAppDelegate.h */,
+				FCFAA0F214F8BF8200F8458C /* VeniceAppDelegate.m */,
+				FCFAA0F414F8BF8200F8458C /* MainStoryboard.storyboard */,
+				FCFAA0F714F8BF8200F8458C /* VeniceViewController.h */,
+				FCFAA0F814F8BF8200F8458C /* VeniceViewController.m */,
+				FCFAA0E914F8BF8200F8458C /* Supporting Files */,
+				FCFAA11714F8BFC300F8458C /* VeniceEllement.h */,
+				FCFAA11814F8BFC300F8458C /* VeniceEllement.m */,
+				FCFAA11B14F8BFE400F8458C /* VeniceFightBattle.h */,
+				FCFAA11C14F8BFE400F8458C /* VeniceFightBattle.m */,
+			);
+			path = EllementFitherLite;
+			sourceTree = "<group>";
+		};
+		FCFAA0E914F8BF8200F8458C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCFAA0EA14F8BF8200F8458C /* EllementFitherLite-Info.plist */,
+				FCFAA0EB14F8BF8200F8458C /* InfoPlist.strings */,
+				FCFAA0EE14F8BF8200F8458C /* main.m */,
+				FCFAA0F014F8BF8200F8458C /* EllementFitherLite-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FCFAA10614F8BF8200F8458C /* EllementFitherLiteTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCFAA10C14F8BF8200F8458C /* EllementFitherLiteTests.h */,
+				FCFAA10D14F8BF8300F8458C /* EllementFitherLiteTests.m */,
+				FCFAA10714F8BF8200F8458C /* Supporting Files */,
+			);
+			path = EllementFitherLiteTests;
+			sourceTree = "<group>";
+		};
+		FCFAA10714F8BF8200F8458C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCFAA10814F8BF8200F8458C /* EllementFitherLiteTests-Info.plist */,
+				FCFAA10914F8BF8200F8458C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FCFAA12314F8C73600F8458C /* Skills */ = {
+			isa = PBXGroup;
+			children = (
+				FCFAA12414F8C76F00F8458C /* VeniceBasicAttackSkill.h */,
+				FCFAA12514F8C76F00F8458C /* VeniceBasicAttackSkill.m */,
+				FCFAA12814F8C7A700F8458C /* VeniceBasicDefenceSkill.h */,
+				FCFAA12914F8C7A700F8458C /* VeniceBasicDefenceSkill.m */,
+				FCFAA12C14F8C7E100F8458C /* VeniceDashSkill.h */,
+				FCFAA12D14F8C7E100F8458C /* VeniceDashSkill.m */,
+				FCFAA13014F8C7F600F8458C /* VeniceBlockSkill.h */,
+				FCFAA13114F8C7F600F8458C /* VeniceBlockSkill.m */,
+				FCFAA13414F8D07100F8458C /* VeniceSkill.h */,
+				FCFAA13514F8D07100F8458C /* VeniceSkill.m */,
+			);
+			name = Skills;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCFAA0DD14F8BF8200F8458C /* EllementFitherLite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCFAA11114F8BF8300F8458C /* Build configuration list for PBXNativeTarget "EllementFitherLite" */;
+			buildPhases = (
+				FCFAA0DA14F8BF8200F8458C /* Sources */,
+				FCFAA0DB14F8BF8200F8458C /* Frameworks */,
+				FCFAA0DC14F8BF8200F8458C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EllementFitherLite;
+			productName = EllementFitherLite;
+			productReference = FCFAA0DE14F8BF8200F8458C /* EllementFitherLite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCFAA0FE14F8BF8200F8458C /* EllementFitherLiteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCFAA11414F8BF8300F8458C /* Build configuration list for PBXNativeTarget "EllementFitherLiteTests" */;
+			buildPhases = (
+				FCFAA0FA14F8BF8200F8458C /* Sources */,
+				FCFAA0FB14F8BF8200F8458C /* Frameworks */,
+				FCFAA0FC14F8BF8200F8458C /* Resources */,
+				FCFAA0FD14F8BF8200F8458C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCFAA10514F8BF8200F8458C /* PBXTargetDependency */,
+			);
+			name = EllementFitherLiteTests;
+			productName = EllementFitherLiteTests;
+			productReference = FCFAA0FF14F8BF8200F8458C /* EllementFitherLiteTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCFAA0D514F8BF8200F8458C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "LeanDev China";
+			};
+			buildConfigurationList = FCFAA0D814F8BF8200F8458C /* Build configuration list for PBXProject "EllementFitherLite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FCFAA0D314F8BF8200F8458C;
+			productRefGroup = FCFAA0DF14F8BF8200F8458C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCFAA0DD14F8BF8200F8458C /* EllementFitherLite */,
+				FCFAA0FE14F8BF8200F8458C /* EllementFitherLiteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCFAA0DC14F8BF8200F8458C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCFAA0ED14F8BF8200F8458C /* InfoPlist.strings in Resources */,
+				FCFAA0F614F8BF8200F8458C /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCFAA0FC14F8BF8200F8458C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCFAA10B14F8BF8200F8458C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FCFAA0FD14F8BF8200F8458C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCFAA0DA14F8BF8200F8458C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCFAA0EF14F8BF8200F8458C /* main.m in Sources */,
+				FCFAA0F314F8BF8200F8458C /* VeniceAppDelegate.m in Sources */,
+				FCFAA0F914F8BF8200F8458C /* VeniceViewController.m in Sources */,
+				FCFAA11914F8BFC300F8458C /* VeniceEllement.m in Sources */,
+				FCFAA11D14F8BFE400F8458C /* VeniceFightBattle.m in Sources */,
+				FCFAA12614F8C76F00F8458C /* VeniceBasicAttackSkill.m in Sources */,
+				FCFAA12A14F8C7A700F8458C /* VeniceBasicDefenceSkill.m in Sources */,
+				FCFAA12E14F8C7E100F8458C /* VeniceDashSkill.m in Sources */,
+				FCFAA13214F8C7F700F8458C /* VeniceBlockSkill.m in Sources */,
+				FCFAA13614F8D07100F8458C /* VeniceSkill.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCFAA0FA14F8BF8200F8458C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCFAA10E14F8BF8300F8458C /* EllementFitherLiteTests.m in Sources */,
+				FCFAA11A14F8BFC300F8458C /* VeniceEllement.m in Sources */,
+				FCFAA11E14F8BFE400F8458C /* VeniceFightBattle.m in Sources */,
+				FCFAA12714F8C76F00F8458C /* VeniceBasicAttackSkill.m in Sources */,
+				FCFAA12B14F8C7A700F8458C /* VeniceBasicDefenceSkill.m in Sources */,
+				FCFAA12F14F8C7E100F8458C /* VeniceDashSkill.m in Sources */,
+				FCFAA13314F8C7F700F8458C /* VeniceBlockSkill.m in Sources */,
+				FCFAA13714F8D07100F8458C /* VeniceSkill.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCFAA10514F8BF8200F8458C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCFAA0DD14F8BF8200F8458C /* EllementFitherLite */;
+			targetProxy = FCFAA10414F8BF8200F8458C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCFAA0EB14F8BF8200F8458C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCFAA0EC14F8BF8200F8458C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FCFAA0F414F8BF8200F8458C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCFAA0F514F8BF8200F8458C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		FCFAA10914F8BF8200F8458C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCFAA10A14F8BF8200F8458C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCFAA10F14F8BF8300F8458C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FCFAA11014F8BF8300F8458C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCFAA11214F8BF8300F8458C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EllementFitherLite/EllementFitherLite-Prefix.pch";
+				INFOPLIST_FILE = "EllementFitherLite/EllementFitherLite-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FCFAA11314F8BF8300F8458C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EllementFitherLite/EllementFitherLite-Prefix.pch";
+				INFOPLIST_FILE = "EllementFitherLite/EllementFitherLite-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FCFAA11514F8BF8300F8458C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EllementFitherLite.app/EllementFitherLite";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EllementFitherLite/EllementFitherLite-Prefix.pch";
+				INFOPLIST_FILE = "EllementFitherLiteTests/EllementFitherLiteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FCFAA11614F8BF8300F8458C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EllementFitherLite.app/EllementFitherLite";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EllementFitherLite/EllementFitherLite-Prefix.pch";
+				INFOPLIST_FILE = "EllementFitherLiteTests/EllementFitherLiteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCFAA0D814F8BF8200F8458C /* Build configuration list for PBXProject "EllementFitherLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCFAA10F14F8BF8300F8458C /* Debug */,
+				FCFAA11014F8BF8300F8458C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCFAA11114F8BF8300F8458C /* Build configuration list for PBXNativeTarget "EllementFitherLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCFAA11214F8BF8300F8458C /* Debug */,
+				FCFAA11314F8BF8300F8458C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FCFAA11414F8BF8300F8458C /* Build configuration list for PBXNativeTarget "EllementFitherLiteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCFAA11514F8BF8300F8458C /* Debug */,
+				FCFAA11614F8BF8300F8458C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCFAA0D514F8BF8200F8458C /* Project object */;
+}
