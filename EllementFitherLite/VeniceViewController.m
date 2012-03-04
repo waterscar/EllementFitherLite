@@ -16,6 +16,30 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+-(IBAction)startFight:(UIButton *)sender
+{
+    NSArray* attackerAttackSkills=[NSArray arrayWithObjects:[[VeniceDashSkill alloc] init],[[VeniceBasicAttackSkill alloc] init], nil];
+    NSArray* defenderAttackSkill=[NSArray arrayWithObjects:[[VeniceBasicAttackSkill alloc] init], nil];
+    NSArray* attackerDefenceSkills=[NSArray arrayWithObjects:[[VeniceBasicDefenceSkill alloc] init],nil];
+    NSArray* defenderDefenceSkill=[NSArray arrayWithObjects:[[VeniceBlockSkill alloc] init], [[VeniceBasicDefenceSkill alloc] init], nil];
+    
+    
+    VeniceEllement* attacker=[[VeniceEllement alloc] initWithName:@"ShaGua" AttackSkills:attackerAttackSkills DefenceSkills:attackerDefenceSkills Hp:200 Attack:60 Defence:20];
+    VeniceEllement* defender=[[VeniceEllement alloc] initWithName:@"DaiZi" AttackSkills:defenderAttackSkill DefenceSkills:defenderDefenceSkill Hp:300 Attack:40 Defence:30];
+
+    
+    battle=[[VeniceFightBattle alloc] initWithAttack:attacker Defender:defender];
+    
+    NSMutableString* battleLog=[[NSMutableString alloc]init];
+    
+    while(attacker.hp>0&&defender.hp>0){
+        [battleLog appendString:[battle performOneRoundFight]];
+        [battleLog appendString:@"-----------------\n"];
+        label.text=battleLog;
+    }
+}
+
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad

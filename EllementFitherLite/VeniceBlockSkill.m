@@ -11,7 +11,7 @@
 @implementation VeniceBlockSkill
 -(id) init{
     if([super init]){
-        super.totalCoolDown=10;
+        super.totalCoolDown=3;
         super.currentCoolDown=1;
         return self;
     }
@@ -19,11 +19,11 @@
 }
 
 -(NSString *) description{
-    return @"Pullup shield and try to block";
+    return @"Pull up shield and try to block";
 }
 
 -(void) performSkillFromAttacker:(VeniceEllement *)attacker toDefender:(VeniceEllement *)defender{    
-    defender.defenceBonus+=100;
+    defender.defenceBonus+=50;
 }
 
 @end

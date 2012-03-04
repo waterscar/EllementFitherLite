@@ -11,7 +11,7 @@
 @implementation VeniceDashSkill
 -(id) init{
     if([super init]){
-        super.totalCoolDown=4;
+        super.totalCoolDown=5;
         super.currentCoolDown=3;
         return self;
     }
@@ -23,8 +23,8 @@
 }
 
 -(void) performSkillFromAttacker:(VeniceEllement *)attacker toDefender:(VeniceEllement *)defender{    
-    attacker.attackBonus+=300;
-    defender.defenceBonus-=100;
+    attacker.attackBonus+=50;
+    defender.defenceBonus-=20;
     
 }
 

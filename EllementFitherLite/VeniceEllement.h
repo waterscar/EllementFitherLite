@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-
 @interface VeniceEllement : NSObject
 {
     int hp;
@@ -21,7 +20,7 @@
     int speed;  
     NSString* name;
     NSArray *attackSkills;
-    NSArray *DefenceSkills;
+    NSArray *defenceSkills;
 }
 
 @property int hp;
@@ -30,4 +29,12 @@
 @property(readonly) int attack;
 @property(readonly) int defence;
 @property(readonly) NSString* name;
+@property(readonly) NSArray* attackSkills;
+@property(readonly) NSArray* defenceSkills;
+
+
+-(id) initWithName: (NSString*)aName AttackSkills: (NSArray *)anAttackSkills DefenceSkills: (NSArray *) aDefenceSkills Hp:(int)aHP Attack: (int) attack Defence: (int) defence;
+
+-(void) clearBonus;
+
 @end

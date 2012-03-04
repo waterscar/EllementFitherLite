@@ -8,6 +8,7 @@
 
 #import "VeniceEllement.h"
 
+
 @implementation VeniceEllement
 
 @synthesize hp;
@@ -16,17 +17,28 @@
 @synthesize attack;
 @synthesize defence;
 @synthesize name;
+@synthesize attackSkills;
+@synthesize defenceSkills;
 
--(id) initWithName: (NSString*)name AttackSkills: (NSArray *)anAttackSkills DefenceSkills: (NSArray *) aDefenceSkills{
+-(id) initWithName: (NSString*)aName AttackSkills: (NSArray *)anAttackSkills DefenceSkills: (NSArray *) aDefenceSkills Hp:(int)aHP Attack: (int) aAttack Defence: (int) aDefence{
     if([self init]){
         attackSkills=anAttackSkills;
-        DefenceSkills=aDefenceSkills;
+        defenceSkills=aDefenceSkills;
+        name=aName;
+        hp=aHP;
+        attack=aAttack;
+        defence=aDefence;
     }
     return self;
 }
 
 -(NSString*) description{
-    return [NSString stringWithFormat:(@"Fighting ellement %s",name)];
+    return [NSString stringWithFormat:@"[%@]" , name];
+}
+
+-(void) clearBonus{
+    attackBonus=0;
+    defenceBonus=0;
 }
 
 @end

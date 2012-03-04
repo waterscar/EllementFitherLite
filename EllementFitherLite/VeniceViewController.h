@@ -7,7 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VeniceFightBattle.h"
+#import "VeniceSkill.h"
+#import "VeniceEllement.h"
+#import "VeniceDashSkill.h"
+#import "VeniceBasicAttackSkill.h"
+#import "VeniceBasicDefenceSkill.h"
+#import "VeniceBlockSkill.h"
 
 @interface VeniceViewController : UIViewController
+{
+    IBOutlet UITextView * label;
+    VeniceFightBattle* battle;
+    
+}
+
+-(IBAction)startFight:(UIButton*)sender;
 
 @end

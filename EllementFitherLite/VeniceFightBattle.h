@@ -18,5 +18,6 @@
 }
 
 -(id) initWithAttack: (VeniceEllement *)anAttacker Defender: (VeniceEllement *) aDefender;
--(VeniceEllement*) performOneRoundFight; 
+-(NSString*) performOneRoundFight;
+-(VeniceSkill*) getOptimizedSkills:(NSArray*)skill;
 @end
